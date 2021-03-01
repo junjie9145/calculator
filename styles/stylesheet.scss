@@ -1,0 +1,49 @@
+
+
+*{
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family: 'Orbitron', sans-serif;
+}
+.back {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculator {
+    background-color: black;
+    
+}
+
+.display {
+    height: 3em;
+    background-color: rgb(194, 176, 176);
+    padding-top: 16px;
+    padding-left: 3px;
+    h1 {
+        text-align: left;
+        font-size: 20px;
+    }
+}
+
+.delete-btn {
+    display: flex;
+    justify-content: space-evenly;
+    button{
+        width: 50%;
+    }
+}
+
+.num-opp {
+    display: grid;    
+    display: grid;
+    width: 100%;    
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
