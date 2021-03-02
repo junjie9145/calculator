@@ -7,6 +7,7 @@
 
 html {
   font-family: 'Orbitron', sans-serif;
+  color: white;
 }
 
 .back {
@@ -25,11 +26,19 @@ html {
 
 .calculator {
   background-color: black;
+  padding: 1rem;
+  border-radius: 3%;
+}
+
+button {
+  cursor: pointer;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1rem;
 }
 
 .display {
   height: 3em;
-  background-color: #c2b0b0;
+  background-color: black;
   padding-top: 16px;
   padding-left: 3px;
 }
@@ -37,6 +46,8 @@ html {
 .display h1 {
   text-align: left;
   font-size: 20px;
+  overflow: hidden;
+  max-width: 10ch;
 }
 
 .delete-btn {
@@ -50,6 +61,19 @@ html {
 
 .delete-btn button {
   width: 50%;
+  border: none;
+  padding: 5px;
+  border-radius: 50%;
+  margin: 3px;
+}
+
+.clear {
+  background-color: #bdb1b1;
+}
+
+.delete {
+  color: white;
+  background-color: red;
 }
 
 .num-opp {
@@ -61,5 +85,27 @@ html {
       grid-template-rows: 1fr 1fr 1fr 1fr;
   -ms-grid-columns: 1fr 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.num-opp button {
+  border-radius: 50%;
+  border: none;
+  height: 2.5rem;
+  width: 2.5rem;
+  color: white;
+  margin: 3px;
+}
+
+.number-btn {
+  background-color: #3b3434;
+}
+
+.opp {
+  background-color: #e29b18;
+  font-size: 1.5rem;
+}
+
+.equals {
+  background-color: #e29b18;
 }
 /*# sourceMappingURL=stylesheet.css.map */
