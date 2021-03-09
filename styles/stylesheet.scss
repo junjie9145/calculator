@@ -19,6 +19,7 @@ html {
 
 .calculator {
     background-color: black;
+    width: 400px;
     padding: 1rem;
     border-radius: 3%;
     
@@ -26,19 +27,29 @@ html {
 button {
     cursor: pointer;
     font-family: 'Orbitron', sans-serif;
-    font-size: 1rem;    
+    font-size: 2rem;    
+    &:hover {
+        background-color: rgb(202, 162, 162);
+    }
+    &:active {
+        background-color: initial;
+    }
 }
 .display {
-    height: 3em;
+    height: 5em;
     background-color: black;
-    padding-top: 16px;
+    padding-top: 6px;
     padding-left: 3px;
     h1 {
         text-align: left;
-        font-size: 20px;
+        font-size: 2rem;
         overflow: hidden;
-        max-width: 10ch;
+        word-wrap: break-word;
+        word-break: break-all;
+        min-height: 25px;
+        max-width: 16ch;
     }
+
 }
 
 .delete-btn {
@@ -48,13 +59,21 @@ button {
         width: 50%;
         border: none;
         padding: 5px;
-        border-radius: 50%;
+        border-radius: 5%;
         margin: 3px;
     }
     
 }
 .clear {
     background-color: rgb(189, 177, 177);
+    &:hover {
+        background-color: rgb(54, 39, 39);
+        color: white;
+    }
+    &:active {
+        background-color: rgb(102, 89, 89);
+        color: white;
+    }
 
 }
 .delete {
@@ -71,14 +90,15 @@ button {
     button {
         border-radius: 50%;
         border: none;
-        height: 2.5rem;
-        width: 2.5rem;
+        height: 5rem;
+        width: 5rem;
         color: white;
         margin: 3px;
     }
     }
-    .number-btn {
+    .imput {
         background-color: rgb(59, 52, 52);
+
     }
     .opp {
         background-color: rgb(226, 155, 24);
